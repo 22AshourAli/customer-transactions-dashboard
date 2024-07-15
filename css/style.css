@@ -1,0 +1,109 @@
+
+[data-theme="light"] {
+    --main-color: #f9f9f9;
+    --bg-color: #ffffff;
+    --color-text: #000000;
+    --border-color: #9c9c9c;
+    --thred-color: #9bbefa;
+  }
+  
+  [data-theme="dark"] {
+    --main-color: #2a2a2a;
+    --bg-color: #1c1c1c;
+    --color-text: #ffffff;
+    --border-color: #747475;
+    --thred-color: #35558d;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .color-text{
+      color: var(--color-text);
+  }
+  body {
+    font-family: "Tajawal", sans-serif;
+    background-color: var(--main-color);
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--color-text);
+  }
+  
+  table {
+    background-color: var(--bg-color);
+    color: var(--color-text);
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-color: var(--border-color);
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid var(--border-color);
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: var(--thred-color);
+    color: var(--color-text);
+  }
+  
+  tr:hover {
+    background-color: var(--thred-color);
+  }
+  canvas {
+    background-color: var(--bg-color);
+    margin-top: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+  }
+  
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .input-group {
+    position: relative;
+    margin: 1.5rem 0;
+  }
+  input {
+    border: none;
+    outline: none;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    width: 100%;
+    color: var(--color-text);
+    background-color: var(--bg-color);
+  }
+  .effect-7 {
+    border: 2px solid var(--border-color);
+    border-radius: 0.25rem;
+    background: url("../assets/search-icon.png") no-repeat 5px;
+    background-size: 2.1875rem;
+    padding-left: 45px;
+  }
+  .effect-7:focus {
+    border-color: var(--thred-color);
+    background-image: url("../assets/search-icon2.png");
+  }
+  @media screen and (max-width: 992px) {
+    .filters {
+      display: block !important;
+    }
+  }
+  #mode{
+      color: var(--color-text);
+  }
